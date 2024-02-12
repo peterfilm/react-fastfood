@@ -2,7 +2,7 @@ import "./header.scss";
 import logo from "../../assets/logo.png";
 import looper from "../../assets/icons/looper.png";
 import ShoppingCart from "../shoppingCart/ShoppingCart";
-import ShoppingList from "../../pages/ShoppingList/ShoppingList";
+import ShoppingList from "../shoppingList/ShoppingList";
 import { useContext, useEffect } from "react";
 import { FoodContext } from "../context";
 import { useLocation, NavLink, useNavigate } from "react-router-dom";
