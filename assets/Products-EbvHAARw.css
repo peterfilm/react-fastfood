@@ -1,0 +1,1 @@
+.products{padding-top:40px;padding-bottom:40px}.products__wrapper{padding:40px;display:grid;min-height:calc(100vh - 707px);grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;justify-content:center;align-items:center}
