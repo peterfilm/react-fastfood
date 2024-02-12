@@ -1,1 +1,0 @@
-import{j as s}from"./index-m_HuMmVS.js";const n="/assets/spinner-taRkA8vQ.gif",i=()=>s.jsx("div",{className:"spinner",children:s.jsx("div",{className:"container",children:s.jsx("div",{className:"spinner__wrapper",children:s.jsx("img",{src:n,alt:"Loading...",className:"spinner__img"})})})});export{i as default};
