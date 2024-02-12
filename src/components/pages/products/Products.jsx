@@ -23,9 +23,7 @@ const Products = () => {
         <section className="products">
             <div className="container">
             <h2 className='title title__black'>All Categories</h2>
-                <div className="products__wrapper">
-                {loading ? <Preloader/> : cards}
-                </div>
+                {loading ? <Preloader/> : <div className="products__wrapper">{cards}</div>}
             </div>
         </section>
         </>

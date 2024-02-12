@@ -9,7 +9,7 @@ const Meal = (props) => {
   const { addToBasket, setTimer, setShow, clearTimer, setLastAdded, showAdded } = useContext(FoodContext);
 
   let price = idMealCard.replace("0", "5").slice(2);
-  const hoverCard = useRef(null);
+  const hoverCard = useRef('meal');
 
   const handleHover = () => {
     hoverCard.current.className = "meal meal__hover";
