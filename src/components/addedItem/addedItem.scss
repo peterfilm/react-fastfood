@@ -1,0 +1,32 @@
+.addedItem {
+    width: 270px;
+    min-height: 70px;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    border-radius: 5px;
+    z-index: 2;
+    padding: 20px 30px 20px 20px;
+
+    &__text{
+        color: white;
+    }
+
+    &__close {
+        position: absolute;
+        right:10px;
+        top:5px;
+        color: white;
+        cursor: pointer;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .addedItem {
+        top: 20px;
+        bottom: unset;
+    }
+}

@@ -1,0 +1,152 @@
+@import '../../style/variables';
+
+.header {
+
+    &__full {
+        height: 795px;
+    }
+
+    &__small {
+        height: 110px;
+    }
+
+    &__main {
+        width: 100%;
+        background-color: $bg;
+        background: url('../../assets/bg/bg_main.jpg') center top / cover no-repeat;
+        transition: 0.2s all;
+    }
+
+    &__menu {
+        padding: 40px 60px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        &_loop {
+            margin-right: 10px;
+        }
+    }
+    &__nav{
+        width: 840px;
+    }
+    &__menu_items {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__menu_item {
+        font-size: 25px;
+        font-weight: 400;
+        color: $light-text;
+        a {
+            text-decoration: none;
+            transition: 0.5s all;
+
+            &:hover  {
+                color: $main-color;
+            }
+        }
+        
+    }
+
+    &__info {
+        display: flex;
+        justify-content:flex-end;
+        padding-top: 100px;
+        padding-right: 172px;
+    }
+
+    &__title {
+        width: 609px;
+    }
+
+    &__logo {
+        cursor: pointer;
+    }
+
+    .btn {
+        margin-top: 45px;
+    }
+}
+
+
+.active-link {
+    font-weight: 700;
+    color: $main-color;
+}
+
+.nonactive-link {
+    color: $light-text;
+}
+
+
+@media (max-width: 1200px) {
+    .header {
+        .container {
+            padding: 0;
+        }
+
+        &__full {
+            height: 570px;
+        }
+        &__menu_item {
+            font-size: 20px;
+        }
+
+        &__info {
+            padding-right: 20px;
+        }
+
+        &__title {
+            width: 500px;
+        }
+    }
+
+    
+}
+
+@media (max-width: 992px) {
+
+    .header {
+        &__full {
+            height: 400px;
+        }
+
+        &__menu {
+            padding: 20px;
+
+            &_item {
+                font-size: 14px;
+            }
+        }
+
+        &__info {
+            padding: 0 20px;
+        }
+
+        &__title {
+            width: 383px;
+        }
+
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        &__title {
+            width: 284px;
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .header {
+        &__title {
+            width: 197px;
+        }
+    }
+}

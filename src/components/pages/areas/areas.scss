@@ -1,0 +1,91 @@
+@import '../../../style/variables';
+
+.areas{
+    padding-top: 30px;
+
+    &__cards {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        min-height: calc(100vh - 707px);
+        justify-content: space-between;
+        align-items: start
+    }
+
+    &__text {
+        text-align: center;
+    }
+}
+
+.area {
+    &__wrapper {
+        position: relative;
+        flex-basis: 25%;
+        background-color: black;
+        cursor: pointer;
+        transition: 0.5s all ease;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            scale: 1;
+            height: auto;
+            object-fit: contain;
+        }
+
+    }
+
+    &__name {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 2;
+        font-family: 'Grand Hotel', cursive;
+        font-size: 70px;
+        color: $light-text;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        transition: 0.5s all ease;
+    }
+}
+
+.offImg {
+    border: none;
+    img {
+        opacity: 0.4;
+        animation: offImgTrans 0.5s ease;
+    }
+}
+
+.onImg {
+    background-color: $main-color;
+    border: 4px solid $main-color;
+    img {
+    opacity: 1;
+    animation: onImgTrans 1s ease;
+    scale: 1.2;
+    }
+}
+
+@keyframes onImgTrans {
+    from {
+        opacity: 0.4;
+        scale: 1;
+    }
+    to {
+        opacity: 1;
+        scale: 1.2;
+    }
+}
+
+@keyframes offImgTrans {
+    from {
+        opacity: 1;
+        scale: 1.2;
+    }
+    to {
+        opacity: 0.4;
+        scale: 1;
+    }
+}
+

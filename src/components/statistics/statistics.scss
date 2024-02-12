@@ -1,0 +1,148 @@
+@import '../../style/variables';
+
+.statistics {
+    &__wrapper {
+        padding-top: 80px;
+        min-height: 800px;
+        background: url('../../assets/bg/design_bg2.jpg') top center / cover no-repeat;
+    }
+
+    &__text {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        padding: 100px 150px 190px 150px;
+    }
+
+    &__item {
+        width: 233px;
+        height: 233px;
+        border-radius: 100%;
+        border: 7px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__item-digit {
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        color: $main-color;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &__item-info {
+        font-size: 29px;
+        font-weight: 700;
+        text-align: center;
+        color: $light-text;
+        text-transform: uppercase;
+    }
+
+
+}
+
+@media (max-width: 1400px) {
+    .statistics {
+        &__item {
+            width: 180px;
+            height: 180px;
+            border: 5px solid white;
+
+            &-digit {
+                font-size: 50px;
+            }
+
+            &-info {
+                font-size: 24px;
+            }
+        }
+
+        &__wrapper {
+            padding-top: 30px;
+            min-height: 530px;
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .statistics {
+        &__info {
+            padding: 80px 40px 40px 40px;
+        }
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .statistics {
+        &__text {
+            width: 600px;
+        }
+
+        &__wrapper {
+            min-height: 400px;
+        }
+
+        &__item {
+            width: 120px;
+            height: 120px;
+            border: 5px solid white;
+
+            &-digit {
+                font-size: 30px;
+            }
+
+            &-info {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .statistics {
+        &__wrapper {
+            min-height: 570px;
+        }
+        &__text {
+            width: 440px;
+        }
+
+        &__info {
+            padding: 40px 40px 0;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .statistics {
+        &__text {
+            padding: 0 40px;
+            width: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,109 @@
+@import '../../style/variables';
+
+.orderItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    &__img {
+        width: 50px;
+        border-radius: 5px;
+        flex-basis: 50px;
+    }
+
+    &__title {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        padding-left: 10px;
+    }
+
+    &__name {
+        padding: 0px 10px;
+        max-width: 270px;
+        flex-grow: 1;
+
+        a {
+            text-decoration: none;
+            color: $bg;
+
+            &:hover {
+                color:$main-color
+            }
+        }
+    }
+
+    &__btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    &__price {
+        flex-basis: 100px;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    &__count {
+        display: flex;
+        flex-basis: 110px;
+        justify-content: space-between;
+    }
+
+    &__input {
+        width: 50px;
+    }
+
+    &__digit {
+        padding: 0px 20px;
+    }
+
+    &__trash {
+        width: 30px;
+        cursor: pointer;
+    }
+}
+
+.lightBg {
+    background-color: rgb(241, 241, 241);
+}
+
+@media (max-width: 576px) {
+    .orderItem {
+        flex-wrap: wrap;
+        font-size: 14px;
+        padding: 10px;
+        &__img {
+            display: none;
+        }
+        &__digit {
+            padding: 0 5px;
+        }
+
+        &__name {
+            flex-basis: 70%;
+            max-width: none;
+        }
+
+        &__price {
+            flex-basis: 20%;
+            min-width: 80px;
+        }
+
+        &__count {
+            padding-left: 10px;
+            flex-basis: 50px;
+        }
+
+        // &__btn {
+        //     width: 20px;
+        //     height: 20px;
+        // }
+        
+    }
+
+}
