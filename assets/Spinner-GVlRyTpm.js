@@ -1,0 +1,1 @@
+import{j as s}from"./index-aH4IqisL.js";const n="/react-fastfood/assets/spinner-taRkA8vQ.gif",e=()=>s.jsx("div",{className:"spinner",children:s.jsx("div",{className:"container",children:s.jsx("div",{className:"spinner__wrapper",children:s.jsx("img",{src:n,alt:"Loading...",className:"spinner__img"})})})});export{e as default};
