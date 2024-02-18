@@ -20,10 +20,12 @@
 
     &__form {
         padding-top: 84px;
+        display: flex;
+        justify-content: center;
     }
 
     &__input {
-        width: 549px;
+        width: 543px;
         height: 63px;
         background-color: $light-text;
         border: 0px;
@@ -38,7 +40,7 @@
 }
 
 .error {
-    width: 771px;
+    width: 765px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -97,6 +99,9 @@
                 font-size: 20px;
             }
         }
+        .error {
+            width: 630px;
+        }
     }
 
 }
@@ -114,6 +119,10 @@
                 width: 200px;
                 font-size: 20px;
             }
+        }
+
+        .error {
+            width: 100%;
         }
     }
 
@@ -136,6 +145,14 @@
                 width: 100%;
                 font-size: 20px;
             }
+        }
+
+        .error {
+            font-size: 12px;
+        }
+
+        .success {
+            font-size: 14px;
         }
     }
 
